@@ -28,11 +28,8 @@ def device_property_changed_cb(property_name, value, path, interface):
             print("sleeping")
             time.sleep(3)
             subprocess.call(['xinput', 'set-prop',
-                             'ThinkPad Compact Bluetooth Keyboard with TrackPoint',
-                             'Device Accel Constant Deceleration', '0.5'])
-            subprocess.call(['xinput', 'set-button-map',
-                             'ThinkPad Compact Bluetooth Keyboard with TrackPoint',
-                             '1 18 3 4 5 6 7'])
+                             'Ultrathin Touch Mouse',
+                             'Device Accel Constant Deceleration', '0.8'])
             print("command executed")
 
 
